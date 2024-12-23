@@ -1,3 +1,101 @@
 The Terminal --> A text input and output environement.
-Different Terms
 
+Different Terms -
+
+1. command line - any  interfacethat is used by entering textualcommands (generally windows centric).
+
+2.Terminal - this is a type of command line (gen.mac centric).
+
+3.console - a cli interface used towork with your computer.
+
+4.shell - a program eunning on Terminal
+
+5.bash - a popular shell on mac os / linux.
+
+6. z-shell - another shell(default).
+
+
+Basic commands
+1. ls = list files // ls -a (to see hidden files)
+2. pwd = print working directories (folder)
+3. clear = clear screen
+
+"~" --> home directory
+"/" --> root directory
+
+Navigation --> inside and outside dir.
+1. cd --> change directories
+2. cd .. --> to go back
+3. cd ../.. --> to go teo more step back
+
+paths --> absolute and realtive
+
+1. absolute --> cd/users/anshikayadav/desktop
+2. realtive --> cd desktop/delta -- current location.
+
+Making directories --> mkdir(create folders)
+
+Flags --> they are characters that we pass with commands tomodify their behaviour
+
+// manual commands --> explore this
+man ls - give info about ls command
+same with other commands
+
+touch command --> to create files
+
+Deleting files and folders
+1. rm - remove files
+2. rmdir - remove empty folders
+3. rm -rf - remove any folders - remove with force
+
+/********************* Git and github *********************/
+
+git(tool) -->  free and open source version control system (tools that helps to trach changes in code).
+
+it is fast, popular and scalable
+
+1. track history
+2. help to collaborate
+
+github --> website where we host repositories online.
+
+Using git ------->
+
+configuring git --> setting up basic thing
+
+git config --global user.name "name"
+git config --global user.name "username"
+
+git config --list --> to display what we have setup
+
+Basic commands (case: when we are cloning the folder from github)
+
+1. clone --> git clone "link"
+
+2. status --> git status
+untracked -> unmodified(noram state) -> modified -> staged by making it commited
+
+3. add(adds new or changed files in our working directory to the git stageing area.) --> git add <- file name ->
+
+4. commit(it is the record of change) --> git commit -m "some maessage".
+
+5. push(upload local repo content which is modified to remote repo) --> git push origin main.
+
+Basic command (case: when we first make our folder form editor itself)
+
+1. init --> use to create new git repo.
+
+2. git add . --> add all at one time
+
+3. git commit -m "some maessage"
+
+4. then if we wnatto push this on to github irst make folder on github that push the local folders using command --> git remote add origin "link" to veify it (git remote -v).
+
+5. git push main origin 
+
+// git branch (to check branch)
+// git branch -M main (to rename branch)
+
+6. then repeat but skip 4th one if working on sam files
+
+commit and add together --> git commit -am "message"
